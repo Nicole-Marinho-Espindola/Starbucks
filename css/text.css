@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Phudu:wght@300&family=Rubik:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap');
+
+:root{
+    --stbcks-black: #27251F;
+    --light-grey: #BEBEBE;
+    --green: #00704A;
+    --dark-green:#1e3932;
+    --white: #fff;
+}
+
+.menu-link-text{
+    font-family: 'Rubik', sans-serif;
+    color: var(--stbcks-black);
+    letter-spacing: 4px;
+    margin: 0 20px;
+    text-transform: uppercase;
+}
+
+.menu-link-text-size{
+    font-size: small;
+}
+
+.menu-link{
+    list-style-type: none;
+}
+
+.menu-link a{
+    text-decoration: none;
+    color: var(--grey);
+}
+
+.menu-link a:hover{
+    color: var(--green);
+}
+
+.input-search-text::placeholder{
+    font-family: 'Rubik', sans-serif;
+    color: var(--light-grey);
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    font-size: 10px;
+}
+
+.green-text{
+    font-family: 'Archivo Black', sans-serif;
+    color: var(--green);
+    font-size: 50px;
+    font-weight: bolder;
+}
+
+.signup-text{
+    font-family: 'Rubik', sans-serif;
+    color:var(--light-grey);
+    font-size: small;
+}
+
+.text-link{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: var(--light-grey);
+    font-size: small;
+    font-family: 'Rubik', sans-serif;
+}
+
+.green-block-title{
+    font-family: 'SoDoSans','Helvetica Neue',Helvetica,Arial,sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    color: var(--white);
+    letter-spacing: .15em;
+    margin-bottom: 20px;
+}
+
+.green-block-subtitle{
+    font-family: 'SoDoSans','Helvetica Neue',Helvetica,Arial,sans-serif;
+    /* font-weight: 700; */
+    font-size: 18px;
+    color: var(--white);
+    /* letter-spacing: .15em; */
+    padding: 0px 10em;
+    text-align: center;
+    line-height: 45px;
+}
+
+.subtitle{
+    font-family: 'SoDoSans','Helvetica Neue',Helvetica,Arial,sans-serif;
+    font-size: 15px;
+    color: var(--green);
+    letter-spacing: .10em;
+    font-weight: 700;
+    padding: 0 20px;
+    /* font-weight: bolder; */
+    text-transform: uppercase;
+}
+
+.title{
+    font-family: 'LanderGrande';
+    color: var(--dark-green);
+    font-size: 50px;
+    font-weight: 540;
+}
+
+.upper-font{
+    text-transform: uppercase;
+}
+
+.btn-basket{
+    font-family: 'SoDoSans','Helvetica Neue',Helvetica,Arial,sans-serif;
+}
+
+.reviews{
+    font-family: 'Rubik', sans-serif;
+    color: var(--stbcks-black);
+    /* font-weight: bold; */
+    text-decoration: none;
+    font-size: 15px;
+}
+
+.reviews:hover{
+    color: var(--dark-green);
+}
+
+.article-subtitle{
+    color: var(--white);
+}
+
+.article-title{
+    color: var(--white);
+    font-size: 60px;
+    font-weight: bold;
+    letter-spacing: normal;
+}
+
+.text-article{
+    color: var(--white);
+    width: 28em;
+}
+
+.white-text{
+    color: var(--white);
+}
