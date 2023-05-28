@@ -236,6 +236,20 @@
     color: var(--white);
     height: 40px;
     width: 7em;
+    transform: 0.02s;
+}
+
+.btn:hover{
+    color: var(--green);
+    border: 1px solid var(--green);
+    background-color: var(--vanila);
+}
+
+.hover:hover{
+    background-color: var(--dark-green);
+    color: var(--vanila);
+    border: 1px solid var(--vanila);
+
 }
 
 .margin-left{
@@ -324,4 +338,91 @@
 
 .read-time{
     margin-left: 25px;
+}
+
+/* .mt-2{
+    margin-top:10px;
+} */
+
+.recipes{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--vanila);
+    height: 45em;
+}
+
+.rec-txt{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5em;
+}
+
+.underline{
+    background-color: var(--dark-green);
+    width: 7em;
+    height: 2px;
+    border-radius: 15px;
+}
+
+.more-link{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 5em;
+}
+
+.history{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    /* margin-top: 5em; */
+    align-items: center;
+    /* margin-left: 13em;
+    margin-bottom: 5em; */
+    margin: 5em 13em 5em 15em;
+}
+
+.history-img{
+    height: 500px;
+}
+
+.logo-footer{
+    height: 100px;
+    position: absolute;
+    top: 0;
+}
+
+.position-footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    /* height: 30em; */
+}
+
+.first-menu-footer{
+    display:flex ;
+    justify-content: center;
+    align-items: center;
+    margin-top: 8em;
+}
+
+.first-text{
+    padding: 15px;
+}
+
+.space{
+    padding: 10px;
+}
+
+.rede-social{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
 }

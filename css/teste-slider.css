@@ -1,0 +1,31 @@
+.slider-img{
+    height: 450px;
+    width: calc(100% / 3);
+    object-fit: cover;
+    margin-left: 14px;
+    opacity: 0.5;
+    margin: 0px 25px;
+}
+
+.slider-img:first-child{
+    margin-left: 0;
+}
+
+.wrapper .carrousel{
+    white-space: nowrap;
+    font-size: 0;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.wrapper{
+    max-width: 1200px;
+}
+
+.carrousel{
+    display: flex;
+}
+
+.active{
+    opacity: 1;
+}

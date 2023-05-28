@@ -34,6 +34,7 @@
     />
     <link rel="stylesheet" href="./css/global.css" />
     <link rel="stylesheet" href="./css/text.css" />
+    <script src="./js/changeInput.js"></script>
     <title>Starbucks</title>
   </head>
   <body>
@@ -87,24 +88,6 @@
         </div>
       </div>
     </header>
-
-    <!-- <main class="position-main">
-        <div class="rewards-block">
-            <img class="rewards-icon" src="./img/starbucks rewards.png" alt="Starbucks Rewards">
-            <div>
-                <a href="#" class="text-link">get more info</a>
-                <span class="line line-green"></span>
-            </div>
-        </div>
-        <div class="signup-block">
-            <h1 class="green-text green-text-block">The happiest hour of the year</h1>
-            <p class="signup-text">Sign up to get exclusive access to deals on drinks this holiday season</p>
-            <div>
-                <a href="#" class="text-link sign-text-link">Send me magic</a>
-                <span class="line line-green"></span>
-            </div>
-        </div>
-    </main> -->
 
     <section class="slider-position">
       <div id="carouselExampleIndicators" class="carousel slide">
@@ -179,59 +162,78 @@
         <p class="subtitle">produtos mais vendidos</p>
         <h1 class="title">Que tal uma xícara de café cremoso?</h1>
       </div>
-      
+
       <div class="products-grid">
         <div class="item-card">
-            <img src="./img/sunnyday-blend.png" alt="" srcset="">
-            <div class="product-info">
-                <img class="img-size" src="./img/lançamento.png" alt="" srcset="">
-                <a class="item-link" href="#">Starbucks® Sunny Day Blend by Nespresso® - 10 cápsulas</a>
-                <p>by Nespresso® | Torra Clara</p>
-                <div class="stars">
-                  <img class="stars-img" src="./img/estrelas-removebg-preview.png" alt="">
-                  <a class="reviews" href="#">(3)</a>
-                </div>
-                <span>R$ 26,99</span>
+          <img src="./img/sunnyday-blend.png" alt="" srcset="" />
+          <div class="product-info">
+            <img class="img-size" src="./img/lançamento.png" alt="" srcset="" />
+            <a class="item-link" href="#"
+              >Starbucks® Sunny Day Blend by Nespresso® - 10 cápsulas</a
+            >
+            <p>by Nespresso® | Torra Clara</p>
+            <div class="stars">
+              <img
+                class="stars-img"
+                src="./img/estrelas-removebg-preview.png"
+                alt=""
+              />
+              <a class="reviews" href="#">(3)</a>
             </div>
-            <div class="put-in-basket">
-                <button class="add">-</button>
-                <input class="input-config" type="number" value="1">
-                <button class="add">+</button>
-                <button class="btn margin-left">Adicionar</button>
-            </div>
+            <span>R$ 26,99</span>
+          </div>
+          <div class="put-in-basket">
+            <button class="add" onclick="reduce('input')">-</button>
+            <input class="input-config" type="number" value="1" id="input"/>
+            <button class="add" onclick="add('input')">+</button>
+            <button class="btn margin-left">Adicionar</button>
+          </div>
         </div>
 
         <div class="item-card">
-            <img src="./img/starbucks_latte_macchiato.png" alt="" srcset="">
-            <div class="product-info">
-                <img src="" alt="" srcset="">
-                <a class="item-link" href="#">Starbucks® Latte Macchiato by NESCAFÉ® Dolce Gusto® - 12 Cápsulas</a>
-                <p>by NESCAFÉ® Dolce Gusto®</p>
-                <div class="stars">
-                  <img class="stars-img" src="./img/estrelas-removebg-preview.png" alt="">
-                  <a class="reviews" href="#">(1)</a>
-                </div>
-                <span>R$ 26,99</span>
+          <img src="./img/starbucks_latte_macchiato.png" alt="" srcset="" />
+          <div class="product-info mt-2">
+            <img src="" alt="" srcset="" />
+            <a class="item-link" href="#"
+              >Starbucks® Latte Macchiato by NESCAFÉ® Dolce Gusto® - 12
+              Cápsulas</a
+            >
+            <p>by NESCAFÉ® Dolce Gusto®</p>
+            <div class="stars">
+              <img
+                class="stars-img"
+                src="./img/estrelas-removebg-preview.png"
+                alt=""
+              />
+              <a class="reviews" href="#">(1)</a>
             </div>
-            <div class="put-in-basket">
-                <button class="add">-</button>
-                <input class="input-config" type="number" value="1">
-                <button class="add">+</button>
-                <button class="btn margin-left">Adicionar</button>
-            </div>
+            <span>R$ 26,99</span>
+          </div>
+          <div class="put-in-basket">
+            <button class="add" onclick="reduce('input2')">-</button>
+            <input class="input-config" type="number" value="1" id="input2"/>
+            <button class="add" onclick="add('input2')">+</button>
+            <button class="btn margin-left">Adicionar</button>
+          </div>
         </div>
-    
+
         <div class="item-card">
-            <img src="./img/mocha.png" alt="" srcset="">
-            <div class="product-info">
-                <a class="item-link" href="#">Starbucks® Mix Caffè Mocha - 4 sachês de 21,5 g</a>
-                <p>Café Instantâneo Premium</p>
-                <div class="stars">
-                    <img class="stars-img" src="./img/estrelas-removebg-preview.png" alt="">
-                    <a class="reviews" href="#">(6)</a>
-                </div>
-                <span>Esgotado</span>
+          <img src="./img/mocha.png" alt="" srcset="" />
+          <div class="product-info">
+            <a class="item-link" href="#"
+              >Starbucks® Mix Caffè Mocha - 4 sachês de 21,5 g</a
+            >
+            <p>Café Instantâneo Premium</p>
+            <div class="stars">
+              <img
+                class="stars-img"
+                src="./img/estrelas-removebg-preview.png"
+                alt=""
+              />
+              <a class="reviews" href="#">(6)</a>
             </div>
+            <span>Esgotado</span>
+          </div>
         </div>
       </div>
     </section>
@@ -240,24 +242,100 @@
       <div class="article">
         <span class="article-subtitle subtitle">preparação</span>
         <span class="article-title title">Níveis de torra</span>
-        <p class="text-article">Qual a torra que prefere? Starbucks
-          <sup>®</sup> Torra Clara, Torra Média ou Torra Escura?
-           Estas sãos as torras que fazem parte dos níveis de torra Starbucks
+        <p class="text-article">
+          Qual a torra que prefere? Starbucks <sup>®</sup> Torra Clara, Torra
+          Média ou Torra Escura? Estas sãos as torras que fazem parte dos níveis
+          de torra Starbucks
           <sup>®</sup>
         </p>
         <div class="position-read">
-          <button class="btn btn-size">Ler o artigo</button>
+          <button class="btn btn-size hover">Ler o artigo</button>
           <div class="read-time">
-            <i class="fa-solid fa-book-open" style="color: #f2f0eb;"></i>
+            <i class="fa-solid fa-book-open" style="color: #f2f0eb"></i>
             <span class="white-text">3 min</span>
           </div>
         </div>
       </div>
       <div>
-        <img src="./img/torra.png" alt="">
+        <img src="./img/torra.png" alt="" />
       </div>
     </article>
 
+    <section class="recipes">
+      <div class="rec-txt">
+        <span class="subtitle">Receitas recomendadas</span>
+        <h1 class="title title-rec">Receitas e Inspirações</h1>
+      </div>
+      <svg
+        width="636"
+        height="630"
+        viewBox="0 0 336 284"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M159.995 20.6461C134.154 21.0761 92.3535 38.4884 72.6483 59.8904C49.012 85.5899 41.3961 139.892 45.0125 167.267C48.8635 196.315 109.196 257.693 139.515 259.133C169.803 260.579 230.403 263.434 252.707 243.006C275.012 222.577 294.521 193.695 294.484 149.698C294.448 105.702 272.874 63.944 240.614 51.5522C208.355 39.1603 185.837 20.2162 159.995 20.6461Z"
+          fill="#00754A"
+        />
+      </svg>
+      <div class="more-link">
+        <a class="subtitle letter-link" href="#">Mais receitas</a>
+        <span class="underline"></span>
+      </div>
+    </section>
+
+    <section class="history">
+      <div>
+        <img class="history-img" src="./img/historia-starbucks.webp" alt="">
+      </div>
+
+      <div class="article">
+        <span class="subtitle">sobre nós</span>
+        <span class="title text-size bold">A história da Starbucks</span>
+        <p class="text-history text-color">
+          Todos os dias, os parceiros (funcionários) da Starbucks
+          vão trabalhar na esperança de fazer duas coisas:
+          compartilhar um ótimo café com seus amigos e ajudar a 
+          tornar o mundo um pouco melhor.
+        </p>
+        <div class="position-read">
+          <button class="btn btn-size">Leia a historia</button>
+          <div class="read-time ml-5">
+            <i class="fa-solid fa-book-open" style="color: #00704A"></i>
+            <span class="green-letter">3 min de leitura</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="green-block position-footer">
+      <img class="logo-footer" src="./img/logo-footer.png" alt="">
+      <div class="first-menu-footer ">
+        <a class="first-text" scr="#">Sobre o Starbucks</a>
+        <a class="first-text" scr="#">Contato</a>
+      </div>
+      <div class="second-menu-footer">
+        <a class="second-text" href="#">Cookies</a>
+        <a class="second-text" href="#">Política de Privacidade</a>
+        <a class="second-text" href="#">Termos e Condições de Uso</a>
+        <a class="second-text" href="#">Regulamento das Promoções</a>
+        <a class="second-text" href="#">FAQs</a>
+        <a class="second-text" href="#">Starbucks.com.br</a>
+      </div>
+      <div class="rede-social">
+        <div class="icons">
+          <a class="space" href="#"><i class="fa-brands fa-instagram" style="color: #5d5d5d;"></i></a>
+          <a class="space" href="#"><i class="fa-brands fa-facebook" style="color: #5d5d5d;"></i></a>
+          <a class="space" href="#"><i class="fa-brands fa-youtube" style="color: #5d5d5d;"></i></a>
+        </div>
+
+        <span class="second-text span-details">A Nestlé usa as marcas registradas da Starbucks sob licença. 
+          Pike Place® é uma marca registrada do Pike Place Market PDA, usado sob licença. 
+          Nespresso® e NESCAFÉ® Dolce Gusto® são marcas registradas da Société de Produits Nestlé S.A.. 
+          Todas as outras marcas são de propriedade de seus proprietários.</span>
+      </div>
+    </footer>
     <script src="./js/script.js"></script>
+   
   </body>
 </html>

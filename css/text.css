@@ -1,9 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Phudu:wght@300&family=Rubik:wght@500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Unica+One&display=swap');
 
 :root{
     --stbcks-black: #27251F;
-    --light-grey: #BEBEBE;
+    --light-grey: #939393;
     --green: #00704A;
     --dark-green:#1e3932;
     --white: #fff;
@@ -42,27 +43,6 @@
     font-size: 10px;
 }
 
-.green-text{
-    font-family: 'Archivo Black', sans-serif;
-    color: var(--green);
-    font-size: 50px;
-    font-weight: bolder;
-}
-
-.signup-text{
-    font-family: 'Rubik', sans-serif;
-    color:var(--light-grey);
-    font-size: small;
-}
-
-.text-link{
-    text-decoration: none;
-    text-transform: uppercase;
-    color: var(--light-grey);
-    font-size: small;
-    font-family: 'Rubik', sans-serif;
-}
-
 .green-block-title{
     font-family: 'SoDoSans','Helvetica Neue',Helvetica,Arial,sans-serif;
     font-weight: 700;
@@ -84,13 +64,12 @@
 }
 
 .subtitle{
-    font-family: 'SoDoSans','Helvetica Neue',Helvetica,Arial,sans-serif;
+    font-family: 'Unica One', cursive;
     font-size: 15px;
     color: var(--green);
-    letter-spacing: .10em;
+    letter-spacing: .15em;
     font-weight: 700;
-    padding: 0 20px;
-    /* font-weight: bolder; */
+    /* padding: 0 20px; */
     text-transform: uppercase;
 }
 
@@ -105,7 +84,7 @@
     text-transform: uppercase;
 }
 
-.btn-basket{
+.btn{
     font-family: 'SoDoSans','Helvetica Neue',Helvetica,Arial,sans-serif;
 }
 
@@ -139,4 +118,79 @@
 
 .white-text{
     color: var(--white);
+}
+
+.title-rec{
+    font-size: 55px;
+}
+
+.letter-link{
+    font-size: medium;
+    font-weight: bold;
+    text-transform: none;
+    color: var(--dark-green);
+    text-decoration: none;
+}
+
+.text-size{
+    font-size: 70px;
+    line-height: 80px;
+}
+
+.text-color{
+    color: var(--dark-green);
+}
+
+.bold{
+    font-weight: 500;
+}
+
+.green-letter{
+    color: var(--green);
+}
+
+.text-history{
+    font-family: 'SoDoSans','Helvetica Neue',Helvetica,Arial,sans-serif;
+    font-size: 18px;
+    width: 25em;
+}
+
+.ml-5{
+    margin-left: 5em;
+}
+
+.first-text{
+    font-family: 'SoDoSans','Helvetica Neue',Helvetica,Arial,sans-serif;
+    color: var(--white);
+    /* font-weight: bold; */
+    font-size: 15px;
+    text-decoration: none;
+}
+
+.first-text:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.second-text{
+    padding: 20px;
+    color: var(--light-grey);
+    font-family: 'SoDoSans','Helvetica Neue',Helvetica,Arial,sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.second-text:hover{
+    text-decoration: underline;
+}
+
+.span-details{
+    font-size: 12px;
+    font-weight: normal;
+    text-align: center;
+}
+
+.span-details:hover{
+    text-decoration: none;
 }

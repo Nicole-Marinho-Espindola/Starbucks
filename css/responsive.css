@@ -1,0 +1,11 @@
+@media screen and (max-width: 900px) {
+    .slider-img{
+        width: calc(100% / 3);
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .slider-img{
+        width: 100%;
+    }
+}
